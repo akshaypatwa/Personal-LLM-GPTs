@@ -16,7 +16,7 @@ def generate_response(prompt):
     full_prompt = "\n".join(conversation_history)
 
     data = {
-        "model": "mistral",
+        "model": "llama2",
         "stream": False,
         "prompt": full_prompt,
     }
@@ -35,7 +35,7 @@ def generate_response(prompt):
 
 iface = gr.Interface(
     fn=generate_response,
-    inputs=gr.inputs.Textbox(lines=2, placeholder="Enter your prompt here..."),
+    inputs=gr.components.Textbox(lines=2, placeholder="Enter your prompt here..."),
     outputs="text"
 )
 
