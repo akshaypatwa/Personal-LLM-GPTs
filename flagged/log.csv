@@ -1,2 +1,5 @@
 prompt,output,flag,username,timestamp
 ,,,,2024-02-19 15:55:21.813507
+give me a background script to pull incidents with priority as critical,"Sure, I can provide you with a sample script that uses the 'incident' table in ServiceNow to search for incidents with priority set to 'critical'. Here is the code:
+SELECT * FROM incident WHERE priority='critical';
+This query will return all instances of incidents where the priority field is equal to 'critical', along with other relevant information such as incident number, status, owner, and more. You can modify this script to include additional search criteria or filters if needed.",,,2024-02-19 17:40:08.219036
