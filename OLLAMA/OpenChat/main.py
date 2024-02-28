@@ -16,7 +16,7 @@ def generate_response(prompt):
     full_prompt = "\n".join(conversation_history)
 
     data = {
-        "model": "llama2-uncensored",
+        "model": "mistral",
         "stream": False,
         "prompt": full_prompt,
     }
